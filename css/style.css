@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swep');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+  background: url("../img/banner.jpg") fixed no-repeat;
+  background-size: cover;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1;
+}
+
+header.sticky{
+    padding: 5px 100px;
+    background: #fff;
+}
+
+
+header .logo{
+    position: relative;
+    font-weight: 720;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header ul li{
+    position: relative;
+    list-style: none;
+    transition: 0.6s;
+}
+
+header ul li a:hover, .login:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 20px;
+    /* background-color: #FFF; */
+    color: dodgerblue;
+    letter-spacing: 2px;
+    font-weight: 500px;
+}
+
+header ul li a, .login{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    
+    background-size: cover;
+}
+
+.banner-p {
+    text-align: justify;
+    color: white;
+    width: 9cm;
+    position: absolute;
+    right: 18vw;
+    top: 5cm;
+}
+
+header.sticky .logo,
+header.sticky ul li, header.sticky ul li a{
+    color: #000;
+}
+
+header.sticky a:hover , header.sticky li:hover {
+  cursor: pointer;
+  
+  color: dodgerblue;
+}
+
+form {
+  background: white;
+}
+
+.logform {
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+
+  position: fixed;
+  top: 3cm;
+  right: 4vw;
+
+  border: 1px solid black;
+  box-shadow: 0px 0px 6px black;
+  background: lightgray;
+
+  width: 5cm;
+  height: 3.8cm;
+
+  border-radius: 5%;
+
+  transition: top .4s, visibility 1s, opacity 1s;
+}
+
+.logform label {
+  margin: 1px auto 1px 10px;
+}
+
+.log-input {
+  display:block;
+  height: 4px;
+  width: 4.5cm;
+  margin: 2px auto auto auto;
+  border-radius: 30px;
+  border:1px solid black;
+  font-size: 10pt;
+  padding: 10px 20px;
+
+  transition: border .5s;
+}
+
+.log-submit {
+  height: .7cm;
+  width: 1.8cm;
+
+  border-radius: 30px;
+  border:1px solid black;
+
+  font-size: 10pt;
+
+  margin: 5% 31% auto 31%;
+
+  transition: background .5s;
+}
+
+.log-input:focus{
+  border-color: dodgerblue;
+  outline: none;
+}
+
+.log-submit:hover {
+  background: dodgerblue;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+.section{
+  margin-top: 5cm;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50vw 40vw;
+  grid-row-gap: 1cm;
+  padding:10px;
+  
+}
+
+#reg{
+  padding: 1cm;
+
+  position: relative;
+  left: 2cm;
+  top: 2.5cm;
+
+  width: 14cm;
+  height: 20cm;
+
+  border-radius: 10%;
+  box-shadow: 0px 0px 9px gray;
+}
+
+#reg h1{
+  text-align: center;
+}
+
+.banner-reg {
+  position: relative;
+  top: 2.5cm;
+
+  width: 14cm;
+  height: 13cm;
+/*Qm ler é gay*/
+  border-radius: 10%;
+  box-shadow: 0px 0px 9px gray;
+  color: black;
+  background: linear-gradient(rgb(0, 204, 255), white)
+}
+
+.banner-reg-p {
+  visibility: visible;
+  text-align: left;
+ 
+
+  width: 9cm;
+  margin: 2.7cm auto auto auto;
+
+  font-size: 25pt;
+
+  transition: .5s ease;
+}
+
+.sub-banner-reg {
+  visibility: hidden;
+
+  position: absolute;
+  top: -1cm;
+  margin-top: 2.5cm;
+
+  transition: .5s ease;
+}
+
+.sub-banner-content {
+  text-align: left;
+
+  width: 100%;
+  margin: 1cm auto auto 1.5cm; 
+
+  font-size: 15pt;
+}
+
+.sub-banner-ul{
+  font-size: 13pt;
+  margin: .5cm .5cm auto 2cm;
+}
+
+/* Full-width input fields */
+.section input{
+  display:block;
+  height: 55px;
+  width: 400px;
+  margin: 1cm auto auto auto;
+  border-radius: 30px;
+  border:1px solid black;
+  font-size: 16pt;
+  padding: 10px 20px;
+  outline: none;
+  }
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the search field */
+/* form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  margin-top: 100px;
+  
+  background: #f1f1f1;
+} */
+
+/* Style the submit button */
+/* form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-top: none; 
+  margin-top: 200px;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+/* div.gallery {
+  border-radius: 5%;
+  margin: 5px;
+  margin-left: 70px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  margin-top: 150px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+} */
